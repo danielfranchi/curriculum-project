@@ -1,145 +1,72 @@
 import React from "react";
-import "./App.css"
 
+import Aside from "./Components/Aside/Aside";
+import Experience from "./Components/Experience/Experience";
+import Perfil from "./Components/Profile/Profile";
+
+import "./App.css"
 
 function App() {
 
   const fakeAPI =  
     {
-      nome: 'Lisa Simpson',
-      ocupacao: 'Developer',
-      resumo: '8 anos e já sei React',
-      perfilProfissional: 'Faço miojo bom',
+      nome: 'Daniel Franchi Mucci',
+      ocupacao: 'React Developer',
+      resumo: 'Entusiasta das tecnologias Front-End',
+      perfilProfissional: 'Densenvolvedor React',
       contatos: [
         {
           id: 1,
           tipo: 'telefone',
-          contato: '19 0000-0000'
+          contato: '19 98726-3464'
         },
         {
           id: 2,
           tipo: 'email',
-          contato: 'nome@dev.com'
+          contato: 'daniel2mf@yahoo.com.br'
         }
       ],
       educacao: [
         {
           id: 1,
-          instituicao: 'EMEF',
-          curso: 'Ensino basico'
+          instituicao: 'Uninove',
+          curso: 'Análise e Desenvolvimento de Sistemas'
         },
         {
           id: 2,
-          instituicao: 'ETEC',
-          curso: 'Como ser dev'
+          instituicao: 'Uninove',
+          curso: 'Sistemas para Internet'
         }
       ],
       experiencia: [
         {
           id: 1,
-          cargo: 'Front',
-          periodo: 'Agosto 2019 - Atualmente',
-          empresa: 'NASA',
-          local: 'Nova York',
-          conteudo: 'Fazia nada e ganhava bem'
+          cargo: 'Bootcamp Desenvolvedor Front-End',
+          periodo: 'Setembro 2020 - Novembro 2020',
+          empresa: 'IGTI',
+          local: 'Belo Horizonte - MG',
+          conteudo: 'Programação Front-End'
         },
         {
           id: 2,
-          cargo: 'Back',
-          periodo: 'Agosto 2018 - Agosto 2019',
-          empresa: 'CIA',
-          local: 'Boston',
-          conteudo: 'Fazia nada e ganhava mal'
+          cargo: 'Bootcamp Desenvolvedor Full Stack',
+          periodo: 'Maio 2020 - Julho 2020',
+          empresa: 'IGTI',
+          local: 'Belo Horizonte - MG',
+          conteudo: 'Programação Full Stack'
         }
       ]
   }
+
+  const [dados] = React.useState(fakeAPI)
+
   return (
     <main>
-      <div className="perfil">
-        <img src="https://i.pravatar.cc/400" alt="Perfil" />
-      </div>
-      <div className="biografia">
-        <h1>
-          Nome Sobrenome
-        </h1>
-        <div className="ocupacao">Developer</div>
-        <p>109 anos e pronta pra ser dev</p>
-      </div>
-
-      <div className="titulo">
-        Perfil <br /> Profissional
-      </div>
-
-      <div className="perfil-profissional">
-        <p>
-          Faço nada da vida
-        </p>
-      </div>
-      <aside>
-        <div className="sidebar">
-          <h3>Contatos</h3>
-
-          <button>Mostrar Contatos</button>
-
-          <div className="lista-de-contatos">
-            <li>
-              <div className="item-contato">
-                <h4>TELEFONE</h4>
-                <p>(19) 0000-0000</p>
-              </div>
-            </li>
-            <li>
-              <div className="item-contato">
-                <h4>TELEFONE</h4>
-                <p>(19) 0000-0000</p>
-              </div>
-            </li>
-          </div>
-        </div>
-
-        <div className="sidebar">
-          <h3>Educação</h3>
-          <div className="lista-de-formacao">
-            <li>
-              <h4>Faculdade da vida</h4>
-              <p>Uniesquina 2019 - 2022</p>
-            </li>
-            <li>
-              <h4>EMEF</h4>
-              <p>Qualquer lugar 2010 - 2013</p>
-            </li>
-          </div>
-        </div>
-      </aside>
-      <div className="experience">
-        <h2>Experiência Profissional</h2>
-
-        <div className="experience-item">
-          <div>
-            <h4>Developer</h4>
-            <span>Novembro 2019 - Atualmente</span>
-
-            <strong>Empresa da hora</strong>
-            <span>Campinas - São Paulo</span>
-          </div>
-          <p>
-            Fazia nada
-        </p>
-        </div>
-        <div className="experience-item">
-
-          <div>
-            <h4>Developer</h4>
-            <span>Agosto 2019 - Novembro 2019</span>
-
-            <strong>Empresa estranha</strong>
-            <span>Sumaré - São Paulo</span>
-          </div>
-          <p>
-            Fazia menos
-        </p>
-        </div>
-      </div>
+      
+      <Perfil dados={dados}/>
+      <Aside dados={dados} />
+      <Experience dados={dados} />
+      
     </main>
   );
 }
