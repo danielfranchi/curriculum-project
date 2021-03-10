@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/%7Bcurriculum-project%7D/static/css/main.424c938e.chunk.css",
+    "main.js": "/%7Bcurriculum-project%7D/static/js/main.c16b3710.chunk.js",
+    "main.js.map": "/%7Bcurriculum-project%7D/static/js/main.c16b3710.chunk.js.map",
+    "runtime-main.js": "/%7Bcurriculum-project%7D/static/js/runtime-main.4408ccec.js",
+    "runtime-main.js.map": "/%7Bcurriculum-project%7D/static/js/runtime-main.4408ccec.js.map",
+    "static/js/2.bf2ed4c8.chunk.js": "/%7Bcurriculum-project%7D/static/js/2.bf2ed4c8.chunk.js",
+    "static/js/2.bf2ed4c8.chunk.js.map": "/%7Bcurriculum-project%7D/static/js/2.bf2ed4c8.chunk.js.map",
+    "index.html": "/%7Bcurriculum-project%7D/index.html",
+    "static/css/main.424c938e.chunk.css.map": "/%7Bcurriculum-project%7D/static/css/main.424c938e.chunk.css.map",
+    "static/js/2.bf2ed4c8.chunk.js.LICENSE.txt": "/%7Bcurriculum-project%7D/static/js/2.bf2ed4c8.chunk.js.LICENSE.txt",
+    "static/media/foto.55dd83a3.jpg": "/%7Bcurriculum-project%7D/static/media/foto.55dd83a3.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4408ccec.js",
+    "static/js/2.bf2ed4c8.chunk.js",
+    "static/css/main.424c938e.chunk.css",
+    "static/js/main.c16b3710.chunk.js"
+  ]
+}
